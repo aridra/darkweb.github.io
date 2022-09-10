@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url(images/background.jpg)
+    ;
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%; 
+    position: relative;
+ }
+ nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+ }
+ .logo{
+    width: 120px;
+    cursor: pointer;
+ }
+ .cart-icon{
+    width: 30px;
+    cursor: pointer;
+ }
+ nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+
+ }
+ nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+ }
+ nav ul li a{
+    color: rgb(252, 245, 245);
+    text-decoration: none;
+    position: relative;
+ }
+ nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translatex(-50%);
+    background: rgb(251, 248, 248);
+    transition: width 0.3s;
+}
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding:  14px 70px;
+    border-radius: 50px;
+    margin-top: 50px;
+
+}
+nav ul li a:hover::after{
+    width: 50%;
+ }
+ .text-box{
+    color: rgb(255, 250, 250);
+    position: absolute;
+    bottom: 8%
+   
+ }
+ .text-box p{
+    font-size: 50px;
+    font-weight: 900;
+
+ }
+ .text-box h1{
+    font-size: 190px;
+    line-height: 160px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(images/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+
+}
+@keyframes back{
+    100%{
+        background-position: 1000px 0;
+        
+    }
+    
+
+ }
+ .text-box h3{
+    font-size: 40px;
+    font-weight: 500;
+ }
+ .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: warp;
+    margin-top: 30px;
+ }
+ .text-box a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid rgb(251, 247, 247);
+    display: flex;
+    align-items: center; 
+ }
+ .text-box a span{
+    font-size: 30px;
+    line-height: 15px;
+    margin-left: 5px;
+ }
+ .social-icons{
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
+ }
+ .social-icons img{
+    width: 25px;
+    display: block;
+    margin: 25px 5px;
+ }
+ 
